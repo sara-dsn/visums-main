@@ -82,7 +82,7 @@ class Db implements IDb {
         //  si erreur alors alerte
           throw new \Exception(sprintf('Query Prepare Error : %s', $sql));
         }
-        // rassocie la demande aux bonnes données
+        // associe la demande aux bonnes données
         $this->statement->execute($data);
       }
     
