@@ -79,6 +79,7 @@ class Db implements IDb {
 
         if($this->statement === FALSE){
           // TODO : Manage error
+          
         //  si erreur alors alerte
           throw new \Exception(sprintf('Query Prepare Error : %s', $sql));
         }
