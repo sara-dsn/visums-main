@@ -1,0 +1,15 @@
+@startuml
+abstract class Config{
+  {static} # data : array
+  {static} # components : array
+
+  {static} + saveEnvFile(string) : void
+  {static} + getValue(string) : mixed
+  {static} + setValue(string, mixed) : void
+  {static} + datas() : array
+  {static} + get(string) : mixed
+  {static} + set(string, mixed) : void
+  {static} + init() : void
+  {static} # readEnvFile(string) : void
+}
+@enduml
